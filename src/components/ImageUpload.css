@@ -1,0 +1,113 @@
+.upload-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.upload-header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.drop-zone {
+  border: 2px dashed var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.drop-zone:hover, .drop-zone.dragging {
+  border-color: var(--accent-primary);
+  background: rgba(139, 92, 246, 0.05);
+}
+
+.drop-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.icon-wrapper {
+  background: rgba(139, 92, 246, 0.1);
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  color: var(--accent-primary);
+  transition: transform 0.3s ease;
+}
+
+.drop-zone:hover .icon-wrapper {
+  transform: scale(1.1);
+}
+
+.drop-content h3 {
+  font-size: 1.125rem;
+}
+
+.drop-content p {
+  font-size: 0.875rem;
+}
+
+.format-hint {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+}
+
+/* Instagram Mockup Style */
+.instagram-mockup {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--bg-main);
+  opacity: 0.7;
+}
+
+.mockup-header {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.mockup-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--border-color);
+}
+
+.mockup-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mockup-line {
+  height: 8px;
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+.mockup-line.w-24 { width: 6rem; }
+.mockup-line.w-16 { width: 4rem; }
+.mockup-line.subtle { opacity: 0.5; }
+
+.mockup-image-placeholder {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  background: rgba(255, 255, 255, 0.02);
+}

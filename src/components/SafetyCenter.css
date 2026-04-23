@@ -1,0 +1,125 @@
+.safety-center {
+  background: rgba(239, 68, 68, 0.05);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.safety-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: rgba(239, 68, 68, 0.1);
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  border-left: 4px solid var(--danger);
+}
+
+.safety-icon-large {
+  color: var(--danger);
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.safety-banner-text h4 {
+  color: var(--danger);
+  margin-bottom: 0.25rem;
+  font-size: 1.05rem;
+}
+
+.safety-center.likely-real { background: rgba(16, 185, 129, 0.05); border-color: rgba(16, 185, 129, 0.3); }
+.safety-center.likely-real .safety-banner { background: rgba(16, 185, 129, 0.1); border-left-color: var(--success); }
+.safety-center.likely-real .safety-icon-large, .safety-center.likely-real .safety-banner-text h4 { color: var(--success); }
+
+.safety-center.uncertain { background: rgba(245, 158, 11, 0.05); border-color: rgba(245, 158, 11, 0.3); }
+.safety-center.uncertain .safety-banner { background: rgba(245, 158, 11, 0.1); border-left-color: var(--warning); }
+.safety-center.uncertain .safety-icon-large, .safety-center.uncertain .safety-banner-text h4 { color: var(--warning); }
+
+.safety-banner-text p {
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.safety-tips {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.safety-tips h5 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.safety-tips ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.safety-tips li {
+  position: relative;
+  padding-left: 1.25rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.safety-tips li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--danger);
+  font-weight: bold;
+}
+
+.safety-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.btn-action {
+  font-size: 0.85rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid transparent;
+  width: 100%;
+}
+
+.btn-action.instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: white;
+}
+
+.btn-action.instagram:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.btn-action.cybercrime {
+  background: var(--bg-card);
+  border-color: var(--danger);
+  color: #ef4444; /* danger */
+}
+
+.btn-action.cybercrime:hover {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.btn-action.copy {
+  background: var(--bg-card);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.btn-action.copy:hover {
+  background: var(--bg-card-hover);
+}
