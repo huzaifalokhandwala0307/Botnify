@@ -27,6 +27,7 @@ AI: Hugging Face Inference API
 ---
 
 ## 📁 Project Structure
+
 botnify/
 │
 ├── api/                     # Vercel serverless functions
@@ -62,6 +63,7 @@ botnify/
 ├── vite.config.js
 ├── vercel.json
 └── README.md
+
 ---
 
 ## ⚙️ Installation
