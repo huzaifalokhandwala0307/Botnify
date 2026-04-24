@@ -1,7 +1,7 @@
 import { ScanFace, Shield, Zap, Eye, ArrowRight, CheckCircle } from 'lucide-react';
-import './LandingPage.css';
+import './Home.css';
 
-export default function LandingPage({ onGetStarted }) {
+export default function Home({ onGetStarted }) {
   return (
     <div className="landing">
       {/* Background */}
