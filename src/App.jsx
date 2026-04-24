@@ -65,7 +65,7 @@ function App() {
   };
 
   if (page === 'landing') {
-    return <LandingPage onGetStarted={() => setPage('app')} />;
+    return <Home onGetStarted={() => setPage('app')} />;
   }
 
   return (
