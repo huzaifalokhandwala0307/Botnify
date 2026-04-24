@@ -19,7 +19,7 @@ function App() {
   useEffect(() => {
     const saved = localStorage.getItem('botsniff_history');
     if (saved) {
-      try { setHistory(JSON.parse(saved)); } catch (e) {}
+      try { setHistory(JSON.parse(saved)); } catch (_) {}
     }
   }, []);
 
