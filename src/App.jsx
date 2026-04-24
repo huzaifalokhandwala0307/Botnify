@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { ScanFace, AlertTriangle } from 'lucide-react';
 import './App.css';
-import LandingPage from './components/LandingPage';
+import Home from './components/Home';
 import ImageUpload from './components/ImageUpload';
 import ProcessingScreen from './components/ProcessingScreen';
 import ResultCard from './components/ResultCard';
