@@ -23,10 +23,10 @@ export default async function handler(req, res) {
     // All candidate models — we try each and use the first one that responds
     const MODELS = [
       'dima806/deepfake_vs_real_image_detection',
-      'prithivMLmods/Deep-Fake-Detector-v2-Model',
-      'Heem2/deepfake-image-detection',
-      'prithivMLmods/Deepfake-Detection-Exp-02-21',
-      'jabertuhin/deepfake-image-detection',
+      // 'prithivMLmods/Deep-Fake-Detector-v2-Model',
+      // 'Heem2/deepfake-image-detection',
+      // 'prithivMLmods/Deepfake-Detection-Exp-02-21',
+      // 'jabertuhin/deepfake-image-detection',
     ];
 
     async function queryModel(model) {
